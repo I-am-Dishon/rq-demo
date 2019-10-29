@@ -10,3 +10,6 @@ q = Queue(connection=Redis())
 
 result = q.enqueue(
              count_words_at_url, 'http://nvie.com')
+
+time.sleep(2)
+print(job.result)
